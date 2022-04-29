@@ -1,13 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import HomeScreen from './views/HomeScreen';
+import NavBar from './compenents/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-
-      </header>
-    </div>
+    <body>
+    <BrowserRouter>
+    <NavBar />
+    <Routes>
+      <Route path="/" element={<HomeScreen />} />
+    </Routes>
+  </BrowserRouter>
+  </body>
   );
 }
 

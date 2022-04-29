@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+.liste {
+    display:flex;
+    padding:0px;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.items {
+    font-family: 'Pacifico', cursive;
+    font-size:32px;
+    color:#FF6B6B;
+    cursor:pointer;
+}
+
+.items:hover {
+    color: rgba(255,107,107,0.7);
+}

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+form {
+    font-family: "Pacifico";
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:250px;
+    height:250px;
+    padding:20px;
+}
+
+#formcontainer {
+    margin-top:30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sndformcontainer {
+    text-align: center;
+    border: 1px solid black;
+}
+
+.space {
+    display:flex;
+    justify-content: space-between;
+}
+
+label, h3 {
+   font-family: "Pacifico"; 
+}
+
+input {
+    border: 1px solid;
+    background: #F7FFF7;
+}
+
+button {
+    margin-top:-40px;
+    padding:4px;
+    border-radius: 100px;
+    background: #4F6D7A;
+    color:#F7FFF7;
+    font-family: "Pacifico";
+    font-size:20px;
+    border: none;
+    box-shadow: -7px 5px 17px 3px rgba(112,112,112,0.84);
+}
