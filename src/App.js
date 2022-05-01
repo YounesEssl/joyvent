@@ -11,7 +11,7 @@ function App() {
   return (
     <body>
     <BrowserRouter>
-    <NavBar width="23"/> 
+    <NavBar /> 
     <Routes>
       <Route path="/" element={<HomeScreen />} />
     </Routes>
