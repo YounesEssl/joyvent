@@ -1,9 +1,8 @@
-import React, { useRef } from 'react';
-import base from '../api/base';
-import "./NewEvent.css"
+import React, { useRef } from "react";
+import base from "../api/base";
+import "./NewEvent.css";
 
 export default function NewEvent() {
-
   const nameRef = useRef();
   const hourRef = useRef();
   const locationRef = useRef();
@@ -32,12 +31,12 @@ export default function NewEvent() {
         <form>
           <div class="space">
             <label>Your Name</label>
-            <input 
-            type="name"
-            className="form-control"
-            id="inputName"
-            aria-describedby="nameHelp"
-            ref={nameRef}
+            <input
+              type="name"
+              className="form-control"
+              id="inputName"
+              aria-describedby="nameHelp"
+              ref={nameRef}
             />
           </div>
           <div class="space">
@@ -58,10 +57,7 @@ export default function NewEvent() {
               ref={locationRef}
             />
           </div>
-          <button
-            type="submit"
-            onClick={newEvent}
-          >
+          <button type="submit" onClick={newEvent}>
             Create Event
           </button>
         </form>
