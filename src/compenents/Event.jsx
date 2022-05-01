@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function Event({ event }) {
-  const eventId = event.id;
   return (
     <div>
       <h1>test</h1>
