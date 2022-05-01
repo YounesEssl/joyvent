@@ -29,7 +29,7 @@ export default function HomeScreen() {
   return (
     <>
       <div id="but">
-          <img src={imgmap} width="600px"/>
+          <img src={imgmap} alt="logo" width="600px"/>
           <button id="newevent">Create Your Event</button>
       </div>
       <div id="formContainer">
