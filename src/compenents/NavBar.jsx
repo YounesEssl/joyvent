@@ -1,6 +1,5 @@
 import "./NavBar.css";
 import { Link } from "react-router-dom";
-import { faBorderNone } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navigation() {
   return (

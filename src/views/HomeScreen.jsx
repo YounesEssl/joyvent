@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import "./HomeScreen.css"
 
 import imgmap from "../assets/images/map.png"
@@ -14,13 +14,11 @@ import base from '../api/base'
 
 export default function HomeScreen() {
 
-  const [event, setEvent] = useState([]);
 
   useEffect(() => {
     base("tblzVrtPuEd6PpMEg")
       .select({ view: 'Grid view' })
       .eachPage((records, fetchNextPage) => {
-        setEvent(records);
         fetchNextPage();
       });
   }, []);
