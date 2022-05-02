@@ -1,21 +1,29 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+
 
 export default function Event({ event }) {
   return (
-    <div>
-      <h1>test</h1>
-      <div>
-        <div>
-          <h4>{event.fields.Name}</h4>
+    <div id="maincontainer">
+      <div id="eventcontainer">
+        <div id="firstcontainer">
+          <div className="eventitems">
+            <p>{event.fields.Name}'s Event</p>  
+          </div>
+          <div className="eventitems">
+            <p>{event.fields.Hour}</p>
+  
+          </div>
         </div>
-        <div>
-          <p>{event.fields.Hour}</p>
-        </div>
-        <div>
+        <div className="eventitems">
           <p>{event.fields.Attendees}</p>
         </div>
-        <div>
+        <div className="eventitems">
           <p>{event.fields.Location}</p>
+        </div>
+        <div>
+          <FontAwesomeIcon className="iconplus" icon={ faPlus } />
         </div>
       </div>
     </div>

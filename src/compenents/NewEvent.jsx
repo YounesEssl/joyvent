@@ -6,14 +6,16 @@ export default function NewEvent() {
   const nameRef = useRef();
   const hourRef = useRef();
   const locationRef = useRef();
+  const passwordRef = useRef();
 
   const newEvent = (elm) => {
     elm.preventDefault();
     const Name = nameRef.current.value;
     const Hour = hourRef.current.value;
     const Location = locationRef.current.value;
+    const Password = passwordRef.current.value;
     base("tblzVrtPuEd6PpMEg").create(
-      { Name, Hour, Location },
+      { Name, Hour, Location, Password },
       function (err, record) {
         if (err) {
           console.error(err);
@@ -55,6 +57,15 @@ export default function NewEvent() {
               className="form-control"
               id="inputLocation"
               ref={locationRef}
+            />
+          </div>
+          <div class="space">
+            <label>Password</label>
+            <input
+              type="text"
+              className="form-control"
+              id="inputLocation"
+              ref={passwordRef}
             />
           </div>
           <button type="submit" onClick={newEvent}>

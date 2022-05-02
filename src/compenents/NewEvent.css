@@ -39,7 +39,6 @@ input {
 }
 
 button {
-  margin-top: -40px;
   padding: 4px;
   border-radius: 100px;
   background: #4f6d7a;
@@ -48,4 +47,9 @@ button {
   font-size: 20px;
   border: none;
   box-shadow: -7px 5px 17px 3px rgba(112, 112, 112, 0.84);
+}
+
+button:hover {
+  background-color: rgba(79, 109, 122, 0.8);
+  cursor:pointer;
 }

@@ -5,7 +5,6 @@ import "./HomeScreen.css"
 import imgmap from "../assets/images/map.png"
 
 import NewEvent from '../compenents/NewEvent'
-import Event from '../compenents/Event'
 
 import base from '../api/base'
 
@@ -34,15 +33,6 @@ export default function HomeScreen() {
       </div>
       <div id="formContainer">
         <NewEvent/>
-      </div>
-      <div>
-        {event.length > 0 ? (
-          <>
-            {event.map((elm) => (
-              <Event key={elm.id} event={elm} />
-            ))}
-          </>
-        ):(<></>)}
       </div>
     </>
   )

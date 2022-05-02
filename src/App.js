@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import HomeScreen from './views/HomeScreen';
+import EventList from './views/EventList';
 import NavBar from './compenents/NavBar';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <NavBar /> 
     <Routes>
       <Route path="/" element={<HomeScreen />} />
+      <Route path="/eventlist" element={<EventList />} />
     </Routes>
   </BrowserRouter>
   </body>
