@@ -7,7 +7,7 @@ import base from "../api/base";
 export default function DeleteBtn({ eventID, passwordField }) {
   const deleteEvent = () => {
     const password = prompt("Enter Password", "");
-    if (password == passwordField) {
+    if (password === passwordField) {
       base("tblzVrtPuEd6PpMEg").destroy(eventID, function (err, deleteEvent) {
         if (err) {
           console.error(err);
