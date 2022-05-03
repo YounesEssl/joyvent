@@ -1,5 +1,6 @@
 import React from 'react'
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
+import { Link } from "react-router-dom";
 import "./HomeScreen.css"
 
 import imgmap from "../assets/images/map.png"
@@ -23,14 +24,19 @@ export default function HomeScreen() {
       });
   }, []);
 
+    const myRef = useRef(null)
+ 
+    const executeScroll = () => myRef.current.scrollIntoView()
+
   return (
+    
     <>
       <div id="but">
           <img src={imgmap} alt="logo" width="600px"/>
-          <button id="newevent">Create Your Event</button>
+          <button id="newevent" onClick={executeScroll}>Create Your Event</button>
       </div>
-      <div id="formContainer">
-        <NewEvent/>
+      <div id="formContainer" ref={myRef}>
+        <NewEvent />
       </div>
     </>
   )

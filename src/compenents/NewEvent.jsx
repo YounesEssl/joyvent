@@ -62,7 +62,7 @@ export default function NewEvent() {
           <div class="space">
             <label>Password</label>
             <input
-              type="text"
+              type="password"
               className="form-control"
               id="inputLocation"
               ref={passwordRef}
