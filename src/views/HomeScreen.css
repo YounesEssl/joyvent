@@ -10,17 +10,26 @@
   font-size: 20px;
   border: none;
   box-shadow: -7px 5px 17px 3px rgba(112, 112, 112, 0.84);
-  margin-top: 20%;
+}
+
+#maincontainer {
+  display:flex;
+  align-items: center;
 }
 
 #newevent:hover {
   background-color: rgba(79, 109, 122, 0.8);
 }
-#but {
-  display: flex;
-  justify-content: center;
-}
 
-img {
-  margin-top: 80px;
+
+
+@media (max-width: 800px) {
+
+  #logo {
+    display:none
+  }
+
+  #newevent {
+    display:none;
+  }
 }
